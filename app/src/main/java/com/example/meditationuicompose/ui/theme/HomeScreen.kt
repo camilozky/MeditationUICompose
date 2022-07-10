@@ -1,5 +1,6 @@
 package com.example.meditationuicompose.ui.theme
 
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -38,36 +39,50 @@ fun HomeScreen() {
             .fillMaxSize()
     )
     Column {
-        GreetingSection()
+        GenericSection()
         ChipSection(chips = listOf("Sweet sleep", "Insomnia", "Depression"))
+        GenericSection(
+            headerText = "Daily Thought",
+            name = "",
+            primaryBodyText = "Meditation • 3-10 min",
+            color = LightRed,
+            iconResId = R.drawable.ic_play
+        )
     }
 }
 
 @Composable
-fun GreetingSection(
-    name: String = "Milo"
+fun GenericSection(
+    headerText: String = "Good morning",
+    name: String = "Milo",
+    primaryBodyText: String = "We wish you have a good day!",
+    color: Color = DeepBlue,
+    @DrawableRes iconResId: Int = R.drawable.ic_search,
 ) {
     Row(
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
-            .fillMaxWidth()
             .padding(15.dp)
+            .clip(RoundedCornerShape(10.dp))
+            .background(color)
+            .padding(horizontal = 15.dp, vertical = 20.dp)
+            .fillMaxWidth()
     ) {
         Column(
             verticalArrangement = Arrangement.Center
         ) {
             Text(
-                text = "Good morning, $name",
+                text = "$headerText $name",
                 style = MaterialTheme.typography.h2
             )
             Text(
-                text = "We wish you have a good day!",
+                text = primaryBodyText,
                 style = MaterialTheme.typography.body1
             )
         }
         Icon(
-            painter = painterResource(id = R.drawable.ic_search),
+            painter = painterResource(id = iconResId),
             contentDescription = "Search",
             tint = Color.White,
             modifier = Modifier.size(24.dp)
