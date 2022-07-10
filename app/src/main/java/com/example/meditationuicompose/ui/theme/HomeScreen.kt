@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
@@ -45,8 +46,9 @@ fun HomeScreen() {
             headerText = "Daily Thought",
             name = "",
             primaryBodyText = "Meditation • 3-10 min",
-            color = LightRed,
-            iconResId = R.drawable.ic_play
+            backgroundColor = LightRed,
+            iconResId = R.drawable.ic_play,
+            textColor = TextWhite
         )
     }
 }
@@ -56,7 +58,8 @@ fun GenericSection(
     headerText: String = "Good morning",
     name: String = "Milo",
     primaryBodyText: String = "We wish you have a good day!",
-    color: Color = DeepBlue,
+    backgroundColor: Color = DeepBlue,
+    textColor: Color = AquaBlue,
     @DrawableRes iconResId: Int = R.drawable.ic_search,
 ) {
     Row(
@@ -65,7 +68,7 @@ fun GenericSection(
         modifier = Modifier
             .padding(15.dp)
             .clip(RoundedCornerShape(10.dp))
-            .background(color)
+            .background(backgroundColor)
             .padding(horizontal = 15.dp, vertical = 20.dp)
             .fillMaxWidth()
     ) {
@@ -78,15 +81,35 @@ fun GenericSection(
             )
             Text(
                 text = primaryBodyText,
-                style = MaterialTheme.typography.body1
+                style = MaterialTheme.typography.body1,
+                color = textColor
             )
         }
-        Icon(
-            painter = painterResource(id = iconResId),
-            contentDescription = "Search",
-            tint = Color.White,
-            modifier = Modifier.size(24.dp)
-        )
+        if (iconResId == R.drawable.ic_play) {
+            Box(
+                contentAlignment = Alignment.Center,
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape)
+                    .background(ButtonBlue)
+                    .padding(10.dp)
+            ) {
+                Icon(
+                    painter = painterResource(id = iconResId),
+                    contentDescription = "Play",
+                    tint = Color.White,
+                    modifier = Modifier.size(16.dp)
+                )
+            }
+        } else {
+            Icon(
+                painter = painterResource(id = iconResId),
+                contentDescription = "Search",
+                tint = Color.White,
+                modifier = Modifier.size(24.dp)
+            )
+        }
+
     }
 }
 
