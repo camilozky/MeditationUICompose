@@ -2,6 +2,8 @@
 
 meditation UI from dribbble shown in the link https://dribbble.com/shots/15822493-Meditation-Mobile-App
 
+© Philipp Lackner
+
 ![image](https://user-images.githubusercontent.com/30737946/178181047-292079a3-1b44-4548-9d44-d66ac869ff3a.png)
 
 https://user-images.githubusercontent.com/30737946/178181175-afaead9e-9b5f-4aad-be34-88068c2df6f9.mp4
