@@ -1,4 +1,4 @@
-package com.example.meditationuicompose.ui.theme
+package com.example.meditationuiapp.milo.meditationui.presentation.ui
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.background
@@ -21,6 +21,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.example.meditationuiapp.ui.theme.AquaBlue
+import com.example.meditationuiapp.ui.theme.ButtonBlue
+import com.example.meditationuiapp.ui.theme.DeepBlue
 import com.example.meditationuicompose.R
 
 

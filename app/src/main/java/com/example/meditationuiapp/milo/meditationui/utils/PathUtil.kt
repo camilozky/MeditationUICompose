@@ -1,4 +1,4 @@
-package com.example.meditationuicompose.ui.theme
+package com.example.meditationuiapp.milo.meditationui.utils
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.fillMaxSize

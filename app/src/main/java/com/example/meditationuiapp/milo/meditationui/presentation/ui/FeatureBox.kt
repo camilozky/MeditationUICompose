@@ -1,4 +1,4 @@
-package com.example.meditationuicompose.ui.theme
+package com.example.meditationuiapp.milo.meditationui.presentation.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -18,12 +18,15 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.meditationuiapp.milo.meditationui.data.local.Feature
+import com.example.meditationuiapp.ui.theme.ButtonBlue
+import com.example.meditationuiapp.ui.theme.TextWhite
 
 @Composable
 fun FeatureBox(
     feature: Feature,
     onTextClicked: () -> Unit = {},
-    ) {
+) {
     Box(
         modifier = Modifier
             .fillMaxSize()

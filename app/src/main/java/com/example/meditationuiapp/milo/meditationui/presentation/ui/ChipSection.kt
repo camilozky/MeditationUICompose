@@ -1,4 +1,4 @@
-package com.example.meditationuicompose.ui.theme
+package com.example.meditationuiapp.milo.meditationui.presentation.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -16,6 +16,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
+import com.example.meditationuiapp.ui.theme.ButtonBlue
+import com.example.meditationuiapp.ui.theme.DarkerButtonBlue
+import com.example.meditationuiapp.ui.theme.TextWhite
 
 @Composable
 fun ChipSection(

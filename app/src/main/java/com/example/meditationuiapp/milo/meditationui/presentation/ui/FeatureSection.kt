@@ -1,4 +1,4 @@
-package com.example.meditationuicompose.ui.theme
+package com.example.meditationuiapp.milo.meditationui.presentation.ui
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Column
@@ -13,13 +13,14 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.meditationuiapp.milo.meditationui.data.local.Feature
 
 @ExperimentalFoundationApi
 @Composable
 fun FeatureSection(
     features: List<Feature>,
     headerText: String = "Features",
-    ) {
+) {
     Column(modifier = Modifier.fillMaxWidth()) {
         Text(
             text = headerText,

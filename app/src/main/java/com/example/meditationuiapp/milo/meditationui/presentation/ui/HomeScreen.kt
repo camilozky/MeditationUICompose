@@ -1,4 +1,4 @@
-package com.example.meditationuicompose.ui.theme
+package com.example.meditationuiapp.milo.meditationui.presentation.ui
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -8,6 +8,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.meditationuiapp.milo.meditationui.data.local.Feature
+import com.example.meditationuiapp.ui.theme.DeepBlue
+import com.example.meditationuiapp.ui.theme.LightRed
+import com.example.meditationuiapp.ui.theme.TextWhite
 import com.example.meditationuicompose.R
 
 @OptIn(ExperimentalFoundationApi::class)

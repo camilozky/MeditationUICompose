@@ -1,4 +1,4 @@
-package com.example.meditationuicompose.ui.theme
+package com.example.meditationuiapp.milo.meditationui.presentation.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -11,6 +11,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.unit.dp
+import com.example.meditationuiapp.milo.meditationui.data.local.Feature
+import com.example.meditationuiapp.milo.meditationui.utils.DrawPathCanvas
+import com.example.meditationuiapp.milo.meditationui.utils.standardQuadFromTo
 
 
 @Composable

@@ -1,11 +1,10 @@
-package com.example.meditationuicompose
+package com.example.meditationuiapp.milo.meditationui.presentation.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.meditationuicompose.ui.theme.HomeScreen
-import com.example.meditationuicompose.ui.theme.MeditationUIComposeTheme
-import com.example.meditationuicompose.ui.theme.features
+import com.example.meditationuiapp.milo.meditationui.data.local.features
+import com.example.meditationuiapp.ui.theme.MeditationUIComposeTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
